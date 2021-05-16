@@ -1,0 +1,17 @@
+{
+  "name": "@bhirmer/monorepo",
+  "description": "Workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "docs": "doctoc --title '**Table of content**' README.md"
+  },
+  "devDependencies": {
+    "doctoc": "~1.4.0",
+    "eslint": "~7.14.0",
+    "typescript": "^4.0.5"
+  }
+}

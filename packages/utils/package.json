@@ -1,0 +1,20 @@
+{
+  "name": "@bhirmer/utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf ./dist && rimraf ./tsconfig.buildinfo",
+    "compile": "tsc --build",
+    "test": "yarn run build"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.12"
+  },
+  "devDependencies": {},
+  "sideEffects": false
+}
